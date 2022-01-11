@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  border-bottom: 2px solid white;
+  color: white;
+  background-color: black;
+  padding-top: 30px;
+  align-items: baseline;
+}
+
+.navItem {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.song-table {
+  width: 100%;
+  background-color: dimgray;
+  
+}
+
+.song-overview {
+  background-color: dimgray;
+  border-bottom: 2px solid white;
+}
+
+.song-header {
+  background-color: dimgray;
+  
+}
+.navItem:hover {
+  color: yellow;
+}
+
+.pageTitle {
+  font-size: 32px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0px;
+  background-color: dimgray;
+  border-bottom: 10px solid white;
+}
+
+#titleInput {
+  width: 20%
+}
+
+#artistInput {
+  width: 20%
+}
+
+#genreSelector {
+  width: 10%;
+}
+
+#ratingSelector {
+  width: 5%
+}
