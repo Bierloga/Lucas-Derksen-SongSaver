@@ -7,13 +7,39 @@
   display: flex;
   justify-content: space-around;
   height: 50px;
-  border-bottom: 2px solid white;
+  border-bottom: 10px solid yellow;
   color: white;
   background-color: black;
   padding-top: 30px;
   align-items: baseline;
 }
 
+.song-row__item {
+  width: 25%
+}
+
+.song-row__button {
+  width: 10%;
+}
+
+.song-row__ratingitem {
+  width: 15%
+}
+
+.songlist-row__item {
+  width: 25%;
+  background-color: lightgrey
+}
+
+.songlist-row__button {
+  width: 10%;
+  background-color: lightgrey;
+}
+
+.songlist-row__ratingitem {
+  width: 15%;
+  background-color: lightgrey;
+}
 .navItem {
   font-size: 20px;
   color: white;
@@ -23,17 +49,32 @@
 .song-table {
   width: 100%;
   background-color: dimgray;
-  
 }
 
 .song-overview {
   background-color: dimgray;
-  border-bottom: 2px solid white;
+  border-bottom: 10px solid yellow;
 }
 
 .song-header {
   background-color: dimgray;
-  
+}
+
+.songlist-table {
+  width: 100%;
+  background-color: black;
+}
+
+.songlist-overview {
+  background-color: lightgrey;
+}
+
+.songlist-header {
+  background-color: lightgrey;
+}
+
+.songlist-header:hover > th {
+  background-color: gold;
 }
 .navItem:hover {
   color: yellow;
@@ -43,26 +84,50 @@
   font-size: 32px;
 }
 
+.about-title {
+  text-align: center;
+  padding: 50px;
+}
+
+.about-video {
+  padding: auto;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  background-color: black;
+  color: yellow;
+  padding: 5px;
+}
+
 .container {
   display: flex;
   justify-content: space-around;
   padding: 30px 0px;
   background-color: dimgray;
-  border-bottom: 10px solid white;
+  border-bottom: 10px solid yellow;
 }
 
-#titleInput {
-  width: 20%
+#title {
+  width: 20%;
+  background-color: palegoldenrod;
 }
 
-#artistInput {
-  width: 20%
+#artist{
+  width: 20%;
+  background-color: palegoldenrod;
 }
 
-#genreSelector {
+#genre{
   width: 10%;
+  background-color: palegoldenrod;
 }
 
-#ratingSelector {
-  width: 5%
+#rating {
+  width: 5%;
+  background-color: palegoldenrod;
 }

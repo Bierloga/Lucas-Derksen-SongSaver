@@ -4,10 +4,6 @@ import SongList from './SongList'
 
 class SongOverview extends React.Component {
 
-    // addSong = (song) => {
-    //     // do something to change the state
-    // }
-
     render() {
         return (
             <div className='song-overview'>
@@ -18,7 +14,8 @@ class SongOverview extends React.Component {
                             <th className="song-row__item">Song</th>
                             <th className="song-row__item">Artist</th>
                             <th className="song-row__item">Genre</th>
-                            <th className="song-row__item">Rating</th>
+                            <th className="song-row__ratingitem">Rating</th>
+                            <th className="song-row__button">Remove?</th>
                         </tr>
                     </tbody>
                 </table>

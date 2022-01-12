@@ -8,21 +8,20 @@ function SongList() {
         dispatch({ type: "DELETE_SONG", id: id })
     }
     const newSongs = songs.map((item) =>
-        <tbody key={item.id}>
-            <tr>
-                <th>{item.title}</th>
-                <th>{item.artist}</th>
-                <th>{item.genre}</th>
-                <th>{item.rating}</th>
-                <th>{item.id}</th>
-                <button onClick={() => handleClick(item.id)}>Remove</button>
-            </tr>
-        </tbody>
+        <tr key={item.id} className="songlist-header">
+            <th className="songlist-row__item">{item.title}</th>
+            <th className="songlist-row__item">{item.artist}</th>
+            <th className="songlist-row__item">{item.genre}</th>
+            <th className="songlist-row__ratingitem">{item.rating}</th>
+            <th className="songlist-row__button"><button className="btn" onClick={() => handleClick(item.id)}>Remove</button></th>
+        </tr>
     )
     return (
-        <div>
-            <table>
-                {newSongs}
+        <div className="songlist-overview">
+            <table className="songlist-table">
+                <tbody>
+                    {newSongs}
+                </tbody>
             </table>
         </div>
     );

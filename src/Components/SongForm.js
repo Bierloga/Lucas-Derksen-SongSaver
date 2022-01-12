@@ -43,7 +43,7 @@ class SongForm extends React.Component {
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
-                    <button onClick={this.handleSubmit}>Submit</button>
+                    <button className="btn" onClick={this.handleSubmit}>Submit</button>
                 </form>
             </div>
         );
