@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 
+
 class SongForm extends React.Component {
     state = {
         title: null,
@@ -11,6 +12,7 @@ class SongForm extends React.Component {
     handleChange = (e) => {
         this.setState({ [e.target.id]: e.target.value })
     }
+
     handleSubmit = (e) => {
         e.preventDefault();
         const newSong = this.state
@@ -53,8 +55,5 @@ const mapDispatchToProps = (dispatch) => {
         addSong: (newSong) => { dispatch({ type: "ADD_SONG", song: newSong }) }
     }
 }
-
-
-
 
 export default connect(null, mapDispatchToProps)(SongForm); 
