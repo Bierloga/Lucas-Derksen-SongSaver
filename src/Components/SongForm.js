@@ -16,7 +16,31 @@ class SongForm extends React.Component {
     handleSubmit = (e) => {
         e.preventDefault();
         const newSong = this.state
+        if (this.state.title == null) {
+            alert("Please provide correct input!")
+            return
+        }
+        else if (this.state.artist == null) {
+            alert("Please provide correct input!")
+            return
+        }
+        else if (this.state.rating == null) {
+            alert("Please provide correct input!")
+            return
+        }
+        else if (this.state.genre == null) {
+            alert("Please provide correct input!")
+            return
+        }
         this.props.addSong(newSong)
+        const titleForm = document.getElementById("title")
+        titleForm.value = ""
+        const artistForm = document.getElementById("artist")
+        artistForm.value = ""
+        const genreForm = document.getElementById("genre")
+        genreForm.value = "DEFAULT"
+        const ratingForm = document.getElementById("rating")
+        ratingForm.value = "DEFAULT"
 
     }
     render() {
